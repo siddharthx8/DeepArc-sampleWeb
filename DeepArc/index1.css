@@ -1,0 +1,150 @@
+*{
+    margin: 0;
+padding: 0;
+font-family: Assistant, -apple-system, BlinkMacSystemFont, Segoe UI, Roboto, Helvetica, Arial, sans-serif;
+    box-sizing: border-box;
+   
+}
+header{
+
+    height: 130px;
+    background-color: #0e2e4e;
+    text-align: center;
+    border-bottom:4px solid rgb(77, 77, 77); 
+    
+    
+    
+}
+.logo{
+    height: 126px;
+    display:inline-block;
+    align-items: center;  
+}
+marquee{
+    font-size: medium;
+    color: #0e2e4e;
+    background-color: rgb(173, 222, 173);
+    border-bottom: 3px solid #0e2e4e;
+    border-top: 3px solid #0e2e4e;
+    text-transform: uppercase;
+   
+
+}
+main{
+    display:flex;
+}
+.nav_bar{
+    display: flex;
+    flex-direction: column ;
+    height: 100%;
+    width: 130px;
+    background-color: aqua;
+    text-transform: uppercase;
+    background-color: #0e2e4e;
+
+}
+.nav_bar a{
+    color:white;
+    text-decoration: none;
+}
+.nav_bar a:hover{
+    border-bottom: 5px solid #0e2e4e;
+ 
+}
+    
+
+.row1{
+    width: 130px;
+    height: 150px;
+    border: 2px solid rgb(77, 77, 77);
+   padding-top: 40px ;
+   padding-left: 5px;
+   text-align: center;
+
+}
+.row1:hover{
+    background-color: lightsteelblue;
+    color: #0e2e4e;
+   
+}
+.row1 a:hover{
+    color:#0e2e4e
+}
+.copyrights{
+    background:  #94969f;
+    color:rgb(12, 11, 11) ;
+    font-size: smaller;
+    padding: 10px ;
+    text-align: end;
+}
+footer{
+    height: 60px;
+    background-color: #94969f;
+}
+body{
+    background-color: rgb(239, 231, 217);
+
+}
+.image{
+    
+    padding-top: 50px;
+}
+.imgslider{
+    padding-left:800px ;
+    width: 800px;
+    height: 400px;
+    background-image: url("image1.jpg");
+    background-size: 100% 100%;
+    box-shadow: rgba(149, 157, 165, 0.2)0px 8px 24px;
+    animation: changeImage 10s linear infinite;
+    animation-timing-function: steps(1);
+    
+   
+    
+}
+@keyframes changeImage {
+    0%{
+        background-image: url(image1.jpg);
+    }
+    25%{
+        background-image: url(image2.jpg);
+    } 
+
+    50%{
+        background-image: url(image3.jpg);
+    }
+    75%{
+        background-image: url(image4.jpg);
+    }
+    100%{
+        background-image: url(image5.jpg);
+    }
+}
+
+.overview{
+    justify-content: space-evenly;
+    display: flex;
+}
+
+.about{
+    padding-left: 50px;
+    padding-top: 50px;
+    flex-wrap: wrap;
+    border: 5px solid rgb(239, 231, 217) ;
+  
+}
+.aboutus{
+    text-align: left;
+  
+    flex-wrap: wrap;
+    padding: 10px;
+   
+}
+h2{
+    color: darkslateblue;
+}
+p{
+color: rgb(35, 35, 35);
+text-align:left;
+
+}
